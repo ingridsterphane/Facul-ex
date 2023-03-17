@@ -8,15 +8,9 @@
 </head>
 <body>
     <h1>Compra de Álbuns</h1>
-    <form method="get" action="teste.jsp">
+    <form method="post" action="teste.jsp">
         Nome: <input type = "text" name = "nome"> <br> 
-
-        Quantidade 
-        <input type = "radio" name = "quantidade" value = "1" checked> 1
-        <input type = "radio" name = "quantidade" value = "2"> 2
-        <input type = "radio" name = "quantidade" value = "3"> 3
-        <input type = "radio" name = "quantidade" value = "4"> 4
-         <br>
+        Email: <input type = "text" name = "email"> <br> 
 
          <select name = "Álbuns">
             <option> BTS - Map of the Soul: Persona </option>
@@ -25,20 +19,39 @@
             <option> BTS - Be </option>
          </select>
          <br>
+
+         Quantidade 
+        <input type = "radio" name = "quantidade" value = "1" checked> 1
+        <input type = "radio" name = "quantidade" value = "2"> 2
+        <input type = "radio" name = "quantidade" value = "3"> 3
+        <input type = "radio" name = "quantidade" value = "4"> 4
+         <br>
          
          Photocards
-         <input type="checkbox" name=" Namjoon" value="sim"> Namjoon
-         <input type="checkbox" name=" Jin" value="sim"> Jin
-         <input type="checkbox" name=" Suga" value="sim"> Suga
-         <input type="checkbox" name=" J-Hope" value="sim"> J-Hope
-         <input type="checkbox" name=" Jimin" value="sim"> Jimin
+         <input type="checkbox" name=" RM" value="sim"> RM
+         <input type="checkbox" name=" JIN" value="sim"> JIN
+         <input type="checkbox" name=" SUGA" value="sim"> SUGA
+         <input type="checkbox" name=" J-HOPE" value="sim"> J-HOPE
+         <input type="checkbox" name=" JIMIN" value="sim"> JIMIN
          <input type="checkbox" name=" V" value="sim"> V
          <input type="checkbox" name=" JK" value="sim"> JK
+         <br>
+
+         Prazo de entrega: 
+         <input type = "date" name = "data"> <br>
+
+         Feedback: <br>
+         <textarea name = "Feedback" rows = "20" cols = "30"></textarea> <br>
+         <input type = "submit">
     </form>
 </body>
 </html>
 
 
- <!-- Checked = selecionado por padrão no caso a opção 1 
-      br = Quebra de linha
+ <!-- Checked = selecionado por padrão no caso a opção 1;
+      br = Quebra de linha;
+      rows = quantidade de linhas que a mensagem nesse caso dentro da "caixa" pode ter;
+      cols = quantidade de colunas;
+      Por padrão o submit ja deixa o botão com o nome "enviar" mais se quiser mudar é só usar o "value"
+      get = envia todos os dados pela url, por isso melhor usar POST para não expor os dados do usuário;
 --> 
